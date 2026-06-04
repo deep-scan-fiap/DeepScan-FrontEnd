@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Eye, EyeOff, Mail, Lock } from "lucide-react";
 import { Link } from "react-router";
-import logoImage from "@/assets/logo.png";
 
 export function Login() {
   const [showPassword, setShowPassword] = useState(false);
@@ -18,16 +17,11 @@ export function Login() {
       <div className="w-full max-w-md">
         {/* Card */}
         <div className="bg-white rounded-2xl shadow-2xl p-8 lg:p-10">
-          {/* Logo */}
-          <div className="flex items-center justify-center mb-8">
-            <img src={logoImage} alt="Deep Scan" className="w-48 h-16 object-contain" />
-          </div>
-
           <h2 className="text-3xl font-bold text-[#064273] text-center mb-2">
-            Bem-vindo de volta
+            Bem-vindo
           </h2>
           <p className="text-[#76b6c4] text-center mb-8">
-            Acesse sua conta para continuar prevendo desastres naturais
+            Acesse sua conta para implementar novos dados
           </p>
 
           {/* Form */}
@@ -105,8 +99,11 @@ export function Login() {
           {/* Sign Up Link */}
           <p className="text-center text-[#76b6c4]">
             Não tem uma conta?{" "}
-            <a href="#" className="text-[#1da2d8] hover:text-[#064273] font-semibold transition-colors">
-              Cadastre-se gratuitamente
+            <a
+              href="#"
+              className="text-[#1da2d8] hover:text-[#064273] font-semibold transition-colors"
+            >
+              Cadastre-se
             </a>
           </p>
 
@@ -119,11 +116,6 @@ export function Login() {
               ← Voltar para a página inicial
             </Link>
           </div>
-        </div>
-
-        {/* Trial Info */}
-        <div className="mt-6 text-center text-white text-sm">
-          <p>30 dias de teste gratuito • Sem necessidade de cartão de crédito</p>
         </div>
       </div>
     </div>

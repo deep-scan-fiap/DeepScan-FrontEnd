@@ -1,5 +1,5 @@
 import { Link } from "react-router";
-import { Mail, MapPin, Phone, Github, Linkedin, Twitter } from "lucide-react";
+import { Mail, MapPin, Phone, Github } from "lucide-react";
 import logoImage from "../assets/logo.png";
 
 export function Footer() {
@@ -17,8 +17,9 @@ export function Footer() {
               />
             </div>
             <p className="text-[#def3f6] text-sm leading-relaxed">
-              IA preditiva para prevenção de desastres naturais através de
-              análise avançada de imagens de satélite.
+              IA preditiva para prevenção de desastres naturais e monitoramento
+              de vida marinha através de análise avançada de imagens de
+              satélite.
             </p>
           </div>
 
@@ -28,6 +29,7 @@ export function Footer() {
             <ul className="space-y-2 text-sm">
               {[
                 { to: "/", label: "Início" },
+                { to: "/monitoramento", label: "Monitoramento" },
                 { to: "/integrantes", label: "Integrantes" },
                 { to: "/sobre", label: "Sobre" },
                 { to: "/faq", label: "FAQ" },
@@ -50,7 +52,7 @@ export function Footer() {
             <ul className="space-y-3 text-sm">
               <li className="flex items-center gap-2 text-[#def3f6]">
                 <Mail size={16} className="text-[#1da2d8]" />
-                contato@deepscan.com
+                deepscan.fiap@gmail.com
               </li>
               <li className="flex items-center gap-2 text-[#def3f6]">
                 <Phone size={16} className="text-[#1da2d8]" />
@@ -68,16 +70,10 @@ export function Footer() {
             <h3 className="font-semibold mb-4 text-[#7fcdff]">Redes Sociais</h3>
             <div className="flex gap-4">
               {[
-                { href: "https://github.com", Icon: Github, label: "GitHub" },
                 {
-                  href: "https://linkedin.com",
-                  Icon: Linkedin,
-                  label: "LinkedIn",
-                },
-                {
-                  href: "https://twitter.com",
-                  Icon: Twitter,
-                  label: "Twitter",
+                  href: "https://github.com/deep-scan-fiap",
+                  Icon: Github,
+                  label: "GitHub",
                 },
               ].map(({ href, Icon, label }) => (
                 <a
