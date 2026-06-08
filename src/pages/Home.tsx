@@ -1,12 +1,4 @@
-import {
-  ArrowRight,
-  Satellite,
-  TrendingUp,
-  Users,
-  Waves,
-  AlertTriangle,
-  Database,
-} from "lucide-react";
+import { ArrowRight, Waves, AlertTriangle, Database } from "lucide-react";
 import { Link } from "react-router";
 import whaleImage from "@/assets/whale.png";
 
@@ -47,10 +39,9 @@ export function Home() {
               </h1>
 
               <p className="text-lg lg:text-xl text-[#def3f6] leading-relaxed">
-                Através de imagens de satélite, criamos uma IA
-                preditiva capaz de prever desastres naturais com
-                maior precisão e antecedência, além de monitorar
-                a biodiversidade marinha mundial.
+                Através de imagens de satélite, criamos uma IA preditiva capaz
+                de prever desastres naturais com maior precisão e antecedência,
+                além de monitorar a biodiversidade marinha mundial.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">
@@ -81,8 +72,8 @@ export function Home() {
               Por que escolher o Deep Scan?
             </h2>
             <p className="text-lg text-[#76b6c4] max-w-2xl mx-auto">
-              Tecnologia de ponta para prevenção de desastres e
-              conservação marinha
+              Tecnologia de ponta para prevenção de desastres e conservação
+              marinha
             </p>
           </div>
 
@@ -90,18 +81,14 @@ export function Home() {
             {/* Feature 1 */}
             <div className="bg-gradient-to-br from-[#def3f6] to-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
               <div className="w-14 h-14 bg-[#1da2d8] rounded-xl flex items-center justify-center mb-6">
-                <AlertTriangle
-                  size={28}
-                  className="text-white"
-                />
+                <AlertTriangle size={28} className="text-white" />
               </div>
               <h3 className="text-xl font-semibold text-[#064273] mb-3">
                 Previsão de Desastres Naturais
               </h3>
               <p className="text-[#76b6c4]">
-                IA preditiva que antecipa tsunamis, furacões e
-                outros fenômenos oceânicos com maior precisão e
-                antecedência.
+                IA preditiva que antecipa tsunamis, furacões e outros fenômenos
+                oceânicos com maior precisão e antecedência.
               </p>
             </div>
 
@@ -114,8 +101,8 @@ export function Home() {
                 Base de Dados Global
               </h3>
               <p className="text-[#76b6c4]">
-                Milhões de imagens de satélite processadas para
-                criar a maior base de dados oceânicos do mundo.
+                Milhões de imagens de satélite processadas para criar a maior
+                base de dados oceânicos do mundo.
               </p>
             </div>
 
@@ -128,8 +115,8 @@ export function Home() {
                 Análise de Biodiversidade
               </h3>
               <p className="text-[#76b6c4]">
-                Catalogação e monitoramento de espécies marinhas
-                dos oceanos mundiais através de IA avançada.
+                Catalogação e monitoramento de espécies marinhas dos oceanos
+                mundiais através de IA avançada.
               </p>
             </div>
           </div>
@@ -141,36 +128,20 @@ export function Home() {
         <div className="container mx-auto px-4 lg:px-8">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="text-4xl lg:text-5xl font-bold mb-2">
-                50M+
-              </div>
-              <div className="text-[#def3f6]">
-                Imagens Processadas
-              </div>
+              <div className="text-4xl lg:text-5xl font-bold mb-2">50M+</div>
+              <div className="text-[#def3f6]">Imagens Processadas</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl lg:text-5xl font-bold mb-2">
-                72h
-              </div>
-              <div className="text-[#def3f6]">
-                Antecedência Média
-              </div>
+              <div className="text-4xl lg:text-5xl font-bold mb-2">72h</div>
+              <div className="text-[#def3f6]">Antecedência Média</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl lg:text-5xl font-bold mb-2">
-                5000+
-              </div>
-              <div className="text-[#def3f6]">
-                Espécies Catalogadas
-              </div>
+              <div className="text-4xl lg:text-5xl font-bold mb-2">5000+</div>
+              <div className="text-[#def3f6]">Espécies Catalogadas</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl lg:text-5xl font-bold mb-2">
-                94%
-              </div>
-              <div className="text-[#def3f6]">
-                Precisão Preditiva
-              </div>
+              <div className="text-4xl lg:text-5xl font-bold mb-2">94%</div>
+              <div className="text-[#def3f6]">Precisão Preditiva</div>
             </div>
           </div>
         </div>
@@ -180,12 +151,11 @@ export function Home() {
       <section className="py-16 lg:py-24 bg-white">
         <div className="container mx-auto px-4 lg:px-8 text-center">
           <h2 className="text-3xl lg:text-4xl font-bold text-[#064273] mb-6">
-            Pronto para prevenir desastres e proteger os
-            oceanos?
+            Pronto para prevenir desastres e proteger os oceanos?
           </h2>
           <p className="text-lg text-[#76b6c4] mb-8 max-w-2xl mx-auto">
-            Junte-se a centros de pesquisa e organizações que
-            confiam no Deep Scan para salvar vidas
+            Junte-se a centros de pesquisa e organizações que confiam no Deep
+            Scan para salvar vidas
           </p>
           <Link
             to="/login"
