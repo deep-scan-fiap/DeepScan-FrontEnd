@@ -1,0 +1,4 @@
+// Base URL — atualmente utilizamos a API de forma local (/api → http://localhost:8080)
+export const API_BASE =
+  (import.meta as unknown as { env: { VITE_API_URL?: string } }).env
+    ?.VITE_API_URL ?? "/api/deepscan";
