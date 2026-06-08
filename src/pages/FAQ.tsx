@@ -23,92 +23,98 @@ export function FAQ() {
     {
       question: "Quem pode usar a plataforma Deep Scan?",
       answer:
-        "Nossa plataforma é essencial para centros de defesa civil, agências governamentais de prevenção de desastres, institutos de pesquisa oceânica, organizações de conservação marinha e universidades.",
+        "Nossa plataforma é essencial para centros de defesa civil, agências governamentais de prevenção de desastres, institutos de pesquisa oceânica, organizações de conservação marinha e universidades. Qualquer instituição que precisa de alertas antecipados sobre desastres naturais ou dados sobre biodiversidade marinha pode se beneficiar do Deep Scan.",
     },
     {
       question: "Com que frequência as imagens são atualizadas?",
       answer:
-        "As imagens de satélite são atualizadas diariamente, dependendo da cobertura de nuvens e da órbita dos satélites. Para áreas de interesse específico, é possível configurar alertas e receber notificações quando novas imagens estiverem disponíveis.",
+        "As imagens de satélite são atualizadas diariamente, dependendo da cobertura de nuvens e da órbita dos satélites. Para áreas de interesse específico, é possível configurar alertas e receber notificações quando novas imagens estiverem disponíveis. Algumas regiões podem ter atualizações múltiplas vezes ao dia.",
     },
     {
       question: "Qual é a precisão das previsões?",
       answer:
-        "Nossa plataforma possui uma taxa de precisão de 94% em previsões de desastres naturais oceânicos. Utilizamos validação cruzada com dados históricos e eventos reais para aprimorar constantemente nossos modelos de IA.",
+        "Nossa plataforma possui uma taxa de precisão de 94% em previsões de desastres naturais oceânicos. Utilizamos validação cruzada com dados históricos e eventos reais para aprimorar constantemente nossos modelos de IA. Cada previsão inclui níveis de confiança e margens de erro para tomada de decisão informada.",
     },
     {
       question: "Como funciona a catalogação de animais marinhos?",
       answer:
-        "Nossa IA identifica e classifica espécies marinhas através do processamento de imagens de satélite e dados oceânicos. Já catalogamos mais de 5000 espécies, monitorando suas populações, rotas migratórias e habitats.",
+        "Nossa IA identifica e classifica espécies marinhas através do processamento de imagens de satélite e dados oceânicos. Já catalogamos mais de 5000 espécies, monitorando suas populações, rotas migratórias e habitats. Isso permite análises sobre mudanças climáticas, áreas de conservação prioritárias e saúde dos ecossistemas marinhos.",
     },
     {
       question: "Quais tipos de desastres podem ser previstos?",
       answer:
-        "Nosso sistema é capaz de prever tsunamis, furacões, tufões, ciclones tropicais, ondas gigantes, mudanças bruscas de temperatura oceânica e outros fenômenos naturais relacionados aos oceanos.",
+        "Nosso sistema é capaz de prever tsunamis, furacões, tufões, ciclones tropicais, ondas gigantes, mudanças bruscas de temperatura oceânica e outros fenômenos naturais relacionados aos oceanos. A antecedência varia de 24 a 72 horas dependendo do tipo de evento e das condições atmosféricas.",
     },
     {
       question: "Como é o processo de cadastro e acesso?",
       answer:
-        "O processo é simples: basta clicar em 'Acessar Plataforma', criar uma conta com seu email institucional ou pessoal, e escolher o plano mais adequado às suas necessidades. Oferecemos um período de teste gratuito de 30 dias.",
+        "O processo é simples: basta clicar em 'Acessar Plataforma', criar uma conta com seu email institucional ou pessoal, e escolher o plano mais adequado às suas necessidades. Oferecemos um período de teste gratuito de 30 dias para você explorar todas as funcionalidades da plataforma.",
     },
     {
       question: "Existe suporte técnico disponível?",
       answer:
-        "Sim, oferecemos suporte técnico completo via email, chat e telefone. Nossa equipe de especialistas está disponível para auxiliar com questões técnicas, interpretação de dados e otimização do uso da plataforma.",
+        "Sim, oferecemos suporte técnico completo via email, chat e telefone. Nossa equipe de especialistas está disponível para auxiliar com questões técnicas, interpretação de dados e otimização do uso da plataforma. Também oferecemos treinamentos e webinars regulares.",
     },
     {
       question: "Os dados podem ser utilizados em publicações científicas?",
       answer:
-        "Absolutamente! Todos os dados e previsões fornecidos pelo Deep Scan podem ser citados em publicações científicas. Fornecemos metadados completos, metodologia detalhada da IA e DOIs quando aplicável.",
+        "Absolutamente! Todos os dados e previsões fornecidos pelo Deep Scan podem ser citados em publicações científicas. Fornecemos metadados completos, metodologia detalhada da IA, DOIs quando aplicável e orientações sobre como citar corretamente os dados em trabalhos acadêmicos e relatórios técnicos.",
     },
   ];
 
   return (
     <div>
       {/* Header */}
-      <section className="bg-gradient-to-br from-foreground to-primary text-primary-foreground py-16 lg:py-20">
+      <section className="bg-gradient-to-br from-[#064273] to-[#1da2d8] text-white py-16 lg:py-20">
         <div className="container mx-auto px-4 lg:px-8 text-center">
-          <h1 className="text-4xl lg:text-5xl font-bold mb-4">
+          <h1 className="text-4xl lg:text-5xl font-bold mb-4 animate-fade-in-up">
             Perguntas Frequentes
           </h1>
-          <p className="text-lg lg:text-xl text-muted max-w-3xl mx-auto">
+          <p className="text-lg lg:text-xl text-[#def3f6] max-w-3xl mx-auto animate-fade-in-up animate-delay-100">
             Encontre respostas para as dúvidas mais comuns sobre o Deep Scan
           </p>
         </div>
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 lg:py-24 bg-background">
+      <section className="py-16 lg:py-24 bg-white">
         <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
           <div className="space-y-4">
             {faqs.map((faq, index) => (
               <div
                 key={index}
-                className="bg-gradient-to-br from-muted to-background rounded-xl shadow-md overflow-hidden"
+                className={`rounded-xl shadow-md overflow-hidden border-2 transition-all duration-300 ${
+                  openIndex === index
+                    ? "border-[#1da2d8] shadow-lg"
+                    : "border-transparent hover:border-[#7fcdff] hover:shadow-md"
+                } bg-gradient-to-br from-[#def3f6] to-white`}
               >
                 <button
                   onClick={() =>
                     setOpenIndex(openIndex === index ? null : index)
                   }
-                  aria-expanded={openIndex === index}
-                  className="w-full px-6 py-5 flex items-center justify-between text-left hover:bg-accent/20 transition-colors"
+                  className="w-full px-6 py-5 flex items-center justify-between text-left hover:bg-[#7fcdff]/20 transition-colors"
                 >
-                  <span className="font-semibold text-foreground text-lg pr-4">
+                  <span className="font-semibold text-[#064273] text-lg pr-4">
                     {faq.question}
                   </span>
                   <ChevronDown
                     size={24}
-                    className={`text-primary flex-shrink-0 transition-transform ${
+                    className={`text-[#1da2d8] flex-shrink-0 transition-transform duration-300 ${
                       openIndex === index ? "rotate-180" : ""
                     }`}
                   />
                 </button>
 
                 <div
-                  className={`overflow-hidden transition-all ${
-                    openIndex === index ? "max-h-96" : "max-h-0"
-                  }`}
+                  style={{
+                    maxHeight: openIndex === index ? "400px" : "0px",
+                    transition: "max-height 0.4s ease, opacity 0.3s ease",
+                    opacity: openIndex === index ? 1 : 0,
+                  }}
+                  className="overflow-hidden"
                 >
-                  <div className="px-6 pb-5 text-secondary leading-relaxed">
+                  <div className="px-6 pb-5 text-[#76b6c4] leading-relaxed border-t border-[#1da2d8]/20 pt-4">
                     {faq.answer}
                   </div>
                 </div>
@@ -117,14 +123,15 @@ export function FAQ() {
           </div>
 
           {/* Contact Section */}
-          <div className="mt-12 p-8 bg-gradient-to-br from-primary to-accent rounded-2xl text-primary-foreground text-center">
+          <div className="mt-12 p-8 bg-gradient-to-br from-[#1da2d8] to-[#7fcdff] rounded-2xl text-white text-center shadow-xl hover:shadow-2xl transition-shadow duration-300">
             <h3 className="text-2xl font-bold mb-3">Ainda tem dúvidas?</h3>
-            <p className="mb-6 text-muted">
+            <p className="mb-6 text-[#def3f6]">
               Nossa equipe está pronta para ajudar você
             </p>
+
             <a
               href="mailto:deepscan.fiap@gmail.com"
-              className="inline-block bg-background text-foreground px-8 py-3 rounded-lg font-semibold hover:bg-muted transition-colors"
+              className="inline-block bg-white text-[#064273] px-8 py-3 rounded-lg font-semibold hover:bg-[#def3f6] transition-all duration-300 hover:scale-105 hover:shadow-md"
             >
               Entre em Contato
             </a>
