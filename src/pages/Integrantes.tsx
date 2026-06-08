@@ -39,13 +39,19 @@ export function Integrantes() {
     },
   ];
 
+  const getInitials = (name: string) =>
+    name
+      .split(" ")
+      .map((n) => n[0])
+      .join("");
+
   return (
     <div>
       {/* Header */}
-      <section className="bg-gradient-to-br from-[#064273] to-[#1da2d8] text-white py-16 lg:py-20">
+      <section className="bg-gradient-to-br from-foreground to-primary text-primary-foreground py-16 lg:py-20">
         <div className="container mx-auto px-4 lg:px-8 text-center">
           <h1 className="text-4xl lg:text-5xl font-bold mb-4">Nossa Equipe</h1>
-          <p className="text-lg lg:text-xl text-[#def3f6] max-w-3xl mx-auto">
+          <p className="text-lg lg:text-xl text-muted max-w-3xl mx-auto">
             Conheça os especialistas dedicados a revolucionar a prevenção de
             desastres naturais
           </p>
@@ -53,41 +59,36 @@ export function Integrantes() {
       </section>
 
       {/* Team Grid */}
-      <section className="py-16 lg:py-24 bg-white">
+      <section className="py-16 lg:py-24 bg-background">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            {team.map((member, index) => (
+            {team.map((member) => (
               <div
-                key={index}
-                className="bg-gradient-to-br from-[#def3f6] to-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all hover:-translate-y-1"
+                key={member.name}
+                className="bg-gradient-to-br from-muted to-background p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 group"
               >
                 {/* Avatar */}
-                <div className="w-24 h-24 bg-gradient-to-br from-[#1da2d8] to-[#7fcdff] rounded-full flex items-center justify-center text-white text-3xl font-bold mb-4 mx-auto">
-                  {member.name
-                    .split(" ")
-                    .map((n) => n[0])
-                    .join("")}
+                <div className="w-24 h-24 bg-gradient-to-br from-primary to-accent rounded-full flex items-center justify-center text-primary-foreground text-3xl font-bold mb-4 mx-auto group-hover:scale-105 transition-transform">
+                  {getInitials(member.name)}
                 </div>
 
                 {/* Info */}
                 <div className="text-center mb-4">
-                  <h3 className="text-xl font-semibold text-[#064273] mb-1">
+                  <h3 className="text-xl font-semibold text-foreground mb-1">
                     {member.name}
                   </h3>
-                  <p className="text-[#1da2d8] font-medium mb-3">
-                    {member.role}
-                  </p>
-                  <p className="text-[#76b6c4] text-sm">{member.bio}</p>
+                  <p className="text-primary font-medium mb-3">{member.role}</p>
+                  <p className="text-secondary text-sm">{member.bio}</p>
                 </div>
 
                 {/* Social Links */}
-                <div className="flex justify-center gap-3 pt-4 border-t border-[#1da2d8]/20">
+                <div className="flex justify-center gap-3 pt-4 border-t border-primary/20">
                   <a
                     href={member.linkedin}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-10 h-10 bg-[#1da2d8] hover:bg-[#064273] rounded-lg flex items-center justify-center text-white transition-colors"
-                    aria-label="LinkedIn"
+                    className="w-10 h-10 bg-primary hover:bg-foreground rounded-lg flex items-center justify-center text-primary-foreground transition-colors"
+                    aria-label={`LinkedIn de ${member.name}`}
                   >
                     <Linkedin size={18} />
                   </a>
@@ -95,8 +96,8 @@ export function Integrantes() {
                     href={member.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-10 h-10 bg-[#1da2d8] hover:bg-[#064273] rounded-lg flex items-center justify-center text-white transition-colors"
-                    aria-label="GitHub"
+                    className="w-10 h-10 bg-primary hover:bg-foreground rounded-lg flex items-center justify-center text-primary-foreground transition-colors"
+                    aria-label={`GitHub de ${member.name}`}
                   >
                     <Github size={18} />
                   </a>
