@@ -113,23 +113,23 @@ function StatCard({ icon, value, label, sub, urgent, green }: StatCardProps) {
     ? "bg-gradient-to-br from-red-500 to-red-700"
     : green
       ? "bg-gradient-to-br from-green-500 to-green-700"
-      : "bg-gradient-to-br from-[#1da2d8] to-[#064273]";
-  const valColor = urgent ? "text-red-600" : "text-[#064273]";
+      : "bg-gradient-to-br from-primary to-foreground";
+  const valColor = urgent ? "text-red-600" : "text-foreground";
 
   return (
-    <div className="bg-white rounded-xl border border-[#064273]/10 p-5 flex flex-col gap-1.5 shadow-sm">
+    <div className="bg-background rounded-xl border border-foreground/10 p-5 flex flex-col gap-1.5 shadow-sm">
       <div
-        className={`w-11 h-11 rounded-xl flex items-center justify-center text-white mb-2 text-xl ${iconBg}`}
+        className={`w-11 h-11 rounded-xl flex items-center justify-center text-primary-foreground mb-2 text-xl ${iconBg}`}
       >
         {icon}
       </div>
       <div className={`text-[28px] font-black leading-none ${valColor}`}>
         {value}
       </div>
-      <div className="text-[12px] text-[#5a7a8e] uppercase tracking-wider">
+      <div className="text-[12px] text-secondary uppercase tracking-wider">
         {label}
       </div>
-      {sub && <div className="text-[12px] text-[#5a7a8e]">{sub}</div>}
+      {sub && <div className="text-[12px] text-secondary">{sub}</div>}
     </div>
   );
 }
@@ -295,17 +295,17 @@ function TabOceano() {
               ].map((m) => (
                 <div
                   key={m.label}
-                  className={`rounded-xl p-3.5 flex flex-col gap-1 ${m.warn ? "bg-red-100" : "bg-[#def3f6]"}`}
+                  className={`rounded-xl p-3.5 flex flex-col gap-1 ${m.warn ? "bg-red-100" : "bg-muted"}`}
                 >
                   <div
-                    className={`text-[22px] font-black ${m.warn ? "text-red-600" : "text-[#064273]"}`}
+                    className={`text-[22px] font-black ${m.warn ? "text-red-600" : "text-foreground"}`}
                   >
                     {m.val}
                   </div>
-                  <div className="text-[11px] text-[#5a7a8e] uppercase tracking-wide">
+                  <div className="text-[11px] text-secondary uppercase tracking-wide">
                     {m.label}
                   </div>
-                  <div className="text-[11px] text-[#76b6c4] font-semibold">
+                  <div className="text-[11px] text-secondary font-semibold">
                     {m.unit}
                   </div>
                 </div>
@@ -695,7 +695,7 @@ function TabRelatorios() {
                   {a.conclusaoAlerta === "N" && (
                     <div className="flex-shrink-0">
                       <button
-                        className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold cursor-pointer border-0 transition-all bg-[#def3f6] text-[#064273] hover:bg-[#76b6c4] hover:text-white disabled:opacity-50 disabled:cursor-not-allowed"
+                        className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold cursor-pointer border-0 transition-all bg-muted text-foreground hover:bg-secondary hover:text-primary-foreground disabled:opacity-50 disabled:cursor-not-allowed"
                         disabled={resolvendo === a.idAlerta}
                         onClick={() => resolver(a.idAlerta)}
                       >
@@ -785,10 +785,10 @@ export function Monitoramento() {
       {/* Header */}
       <div className="flex items-center justify-between flex-wrap gap-4 mb-6">
         <div>
-          <h1 className="text-[26px] font-black text-[#064273] tracking-tight leading-tight">
+          <h1 className="text-[26px] font-black text-foreground tracking-tight leading-tight">
             🌐 Central de Monitoramento
           </h1>
-          <p className="text-[14px] text-[#5a7a8e] mt-1">
+          <p className="text-[14px] text-secondary mt-1">
             Dados em tempo real · Alertas automáticos
           </p>
         </div>
@@ -796,17 +796,18 @@ export function Monitoramento() {
 
       {/* Tabs */}
       <div className="mb-6">
-        <div className="flex gap-1 bg-[#def3f6] rounded-xl p-1 w-fit overflow-x-auto">
+        <div className="flex gap-1 bg-muted rounded-xl p-1 w-fit overflow-x-auto">
           {TABS.map((t) => (
             <button
               key={t.id}
               className={`px-5 py-2.5 rounded-lg text-sm font-semibold cursor-pointer border-0 transition-all whitespace-nowrap flex items-center gap-2
                 ${
                   tab === t.id
-                    ? "bg-[#064273] text-white shadow-sm"
-                    : "bg-transparent text-[#064273] hover:bg-[#064273]/10"
+                    ? "bg-foreground text-primary-foreground shadow-sm"
+                    : "bg-transparent text-foreground hover:bg-foreground/10"
                 }`}
               onClick={() => setTab(t.id)}
+              aria-pressed={tab === t.id}
             >
               {t.label}
             </button>
