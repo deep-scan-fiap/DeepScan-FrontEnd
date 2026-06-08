@@ -13,20 +13,20 @@ import type { Alerta, LeituraTelemetria, Especie, Avistamento } from "@/types";
 // ── Constantes de estilo Tailwind ─────────────────────────────────────────────
 
 const CARD =
-  "bg-white rounded-2xl border border-[#064273]/10 overflow-hidden shadow-sm";
+  "bg-background rounded-2xl border border-foreground/10 overflow-hidden shadow-sm";
 const HDR =
-  "px-5 py-4 border-b border-[#064273]/10 flex items-center justify-between bg-white";
-const TTL = "text-[15px] font-bold text-[#064273] flex items-center gap-2";
+  "px-5 py-4 border-b border-foreground/10 flex items-center justify-between bg-background";
+const TTL = "text-[15px] font-bold text-foreground flex items-center gap-2";
 const BDY = "p-5";
 const BDG =
   "inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-bold uppercase tracking-wide";
 const SGRID = "grid grid-cols-[repeat(auto-fit,minmax(180px,1fr))] gap-4";
 const TH =
-  "bg-[#def3f6] text-[#064273] font-bold text-[11px] uppercase tracking-wide py-2.5 px-3.5 text-left border-b-2 border-[#064273]/10 whitespace-nowrap";
-const TD = "py-2.5 px-3.5 border-b border-[#064273]/10";
-const TR = "hover:bg-[#def3f6]/50";
+  "bg-muted text-foreground font-bold text-[11px] uppercase tracking-wide py-2.5 px-3.5 text-left border-b-2 border-foreground/10 whitespace-nowrap";
+const TD = "py-2.5 px-3.5 border-b border-foreground/10";
+const TR = "hover:bg-muted/50";
 const MOCK =
-  "bg-gradient-to-br from-[#064273]/[4%] to-[#1da2d8]/[6%] border border-dashed border-[#76b6c4] rounded-xl p-6";
+  "bg-gradient-to-br from-foreground/[4%] to-primary/[6%] border border-dashed border-secondary rounded-xl p-6";
 
 function riscoBadge(r: string) {
   const cls =
