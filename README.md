@@ -152,6 +152,8 @@ DeepScan-FrontEnd/
 │   ├── assets/                 # Imagens e recursos estáticos
 │   │   ├── logo.png            # Logotipo DeepScan
 │   │   ├── whale.png           # Baleia (elemento visual principal)
+│   │   ├── monitoramento.png   # Imagem da aba de monitoramento 
+│   │   ├── paginaInicial.png   # Página inicial da aplicação
 │   │   └── foto*.png/jpeg      # Fotos da equipe
 │   │
 │   ├── components/             # Componentes reutilizáveis
