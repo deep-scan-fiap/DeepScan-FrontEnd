@@ -161,43 +161,6 @@ function TableWrap({
   );
 }
 
-// ── Seção IA Mock ──────────────────────────────────────────────────────────────
-
-function IaMock({
-  title,
-  desc,
-  items,
-}: {
-  title: string;
-  desc: string;
-  items: string[];
-}) {
-  return (
-    <div className={MOCK}>
-      <div className="flex items-center gap-2.5 mb-4 flex-wrap">
-        <span className="text-[22px]">🤖</span>
-        <span className="text-[15px] font-bold text-[#064273]">{title}</span>
-        <span
-          className={`${BDG} bg-[#1da2d8]/15 text-[#064273] border border-dashed border-[#1da2d8]`}
-        >
-          IA Python — Em Desenvolvimento
-        </span>
-      </div>
-      <p className="text-[13px] text-[#5a7a8e] mb-4">{desc}</p>
-      <div className="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-3">
-        {items.map((item) => (
-          <div
-            key={item}
-            className="bg-[#064273]/5 rounded-lg h-20 flex items-center justify-center text-[#5a7a8e] text-[13px] text-center px-3"
-          >
-            {item}
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-}
-
 // ── Tab: Oceano ───────────────────────────────────────────────────────────────
 
 function TabOceano() {
@@ -446,18 +409,6 @@ function TabOceano() {
           )}
         </div>
       </div>
-
-      {/* IA Mock */}
-      <IaMock
-        title="Previsão de Eventos Oceânicos"
-        desc="Este módulo será integrado ao backend Python com modelos preditivos de ML para previsão de tsunamis, furacões e anomalias de temperatura superficial."
-        items={[
-          "Risco de Tsunami",
-          "Formação de Ciclone",
-          "Anomalia de TSM",
-          "Sismo > M5",
-        ]}
-      />
     </div>
   );
 }
@@ -598,17 +549,6 @@ function TabVidaMarinha() {
           )}
         </div>
       </div>
-
-      {/* IA Mock */}
-      <IaMock
-        title="Análise de Tendências de Biodiversidade"
-        desc="Este módulo usará o backend Python para correlacionar dados de avistamentos com variações de SST, atividade sísmica e mudanças climáticas sazonais."
-        items={[
-          "Mapa de Calor de Avistamentos",
-          "Tendência Migratória",
-          "Correlação SST × Espécie",
-        ]}
-      />
     </div>
   );
 }
@@ -751,18 +691,6 @@ function TabRelatorios() {
       {alertas && (
         <AlertList items={resolvidos} title="✅ Alertas Resolvidos" />
       )}
-
-      {/* IA Mock */}
-      <IaMock
-        title="Relatório Automático por IA"
-        desc="O backend Python irá gerar relatórios automáticos correlacionando alertas, leituras e avistamentos, com sugestões de ação e previsões para as próximas 72h."
-        items={[
-          "Resumo Executivo (PDF)",
-          "Previsão 24h",
-          "Previsão 72h",
-          "Análise de Padrões",
-        ]}
-      />
     </div>
   );
 }

@@ -10,6 +10,7 @@ export function Header() {
   const navLinks = [
     { path: "/", label: "Início" },
     { path: "/monitoramento", label: "Monitoramento" },
+    { path: "/analise-ia", label: "Análise IA" },
     { path: "/integrantes", label: "Integrantes" },
     { path: "/sobre", label: "Sobre" },
     { path: "/faq", label: "FAQ" },
@@ -43,7 +44,20 @@ export function Header() {
                   isActive(link.path) ? "text-[#7fcdff]" : ""
                 }`}
               >
-                {link.label}
+                {link.path === "/analise-ia" ? (
+                  <span className="flex items-center gap-1.5">
+                    <span
+                      className={`w-1.5 h-1.5 rounded-full flex-shrink-0 transition-colors ${
+                        isActive(link.path)
+                          ? "bg-[#7fcdff]"
+                          : "bg-[#1da2d8] group-hover:bg-[#7fcdff]"
+                      }`}
+                    />
+                    {link.label}
+                  </span>
+                ) : (
+                  link.label
+                )}
                 <span
                   className={`absolute bottom-0 left-0 h-0.5 bg-[#7fcdff] transition-all duration-300 ${
                     isActive(link.path) ? "w-full" : "w-0 group-hover:w-full"
@@ -52,14 +66,6 @@ export function Header() {
               </Link>
             ))}
           </nav>
-
-          {/* Desktop Login Button */}
-          <Link
-            to="/login"
-            className="hidden md:block bg-[#1da2d8] hover:bg-[#7fcdff] hover:text-[#064273] px-6 py-2 rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-lg"
-          >
-            Acessar Plataforma
-          </Link>
 
           {/* Mobile Menu Button */}
           <button
@@ -85,20 +91,16 @@ export function Header() {
                 key={link.path}
                 to={link.path}
                 onClick={() => setMobileMenuOpen(false)}
-                className={`py-2 px-4 rounded transition-colors hover:bg-[#1da2d8] ${
+                className={`py-2 px-4 rounded transition-colors hover:bg-[#1da2d8] flex items-center gap-2 ${
                   isActive(link.path) ? "bg-[#1da2d8] text-white" : ""
                 }`}
               >
+                {link.path === "/analise-ia" && (
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#7fcdff] flex-shrink-0" />
+                )}
                 {link.label}
               </Link>
             ))}
-            <Link
-              to="/login"
-              onClick={() => setMobileMenuOpen(false)}
-              className="bg-[#1da2d8] hover:bg-[#7fcdff] hover:text-[#064273] py-2 px-4 rounded text-center transition-all duration-300"
-            >
-              Acessar Plataforma
-            </Link>
           </nav>
         </div>
       </div>
