@@ -721,8 +721,8 @@ export function Monitoramento() {
       </div>
 
       {/* Tabs */}
-      <div className="mb-6">
-        <div className="flex gap-1 bg-muted rounded-xl p-1 w-fit overflow-x-auto">
+      <div className="mb-6 overflow-x-scroll gap-4">
+        <div className="flex gap-1 bg-muted rounded-xl p-1 w-fit ">
           {TABS.map((t) => (
             <button
               key={t.id}
