@@ -109,13 +109,13 @@ Desastres naturais oceânicos como tsunamis, furacões e anomalias de temperatur
 
 ```
 ┌─────────────────────────────────────────────────────┐
-│                   USUÁRIO / BROWSER                  │
+│                   USUÁRIO / BROWSER                 │
 └───────────────────────┬─────────────────────────────┘
                         │
 ┌───────────────────────▼─────────────────────────────┐
-│             FRONTEND — React + TypeScript            │
-│           Vercel · https://deepscanfiap.vercel.app   │
-└──────┬────────────────────────────────────┬──────────┘
+│             FRONTEND — React + TypeScript           │
+│           Vercel · https://deepscanfiap.vercel.app  │
+└──────┬────────────────────────────────────┬─────────┘
        │                                    │
 ┌──────▼──────────┐              ┌──────────▼──────────┐
 │  Backend Java   │              │     Backend IA      │
@@ -207,7 +207,7 @@ DeepScan-FrontEnd/
 
 |                                   Página inicial                                    |                                   Monitoramento                                    |
 | :---------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------: |
-| <img src="src/assets/paginaInicial.png" alt="Página inicial DeepScan" width="200"/> | <img src="src/assets/monitoramento.png" alt="Monitoramento DeepScan" width="280"/> |
+| <img src="src/assets/paginaInicial.png" alt="Página inicial DeepScan" width="280"/> | <img src="src/assets/monitoramento.png" alt="Monitoramento DeepScan" width="280"/> |
 |                           Identidade visual da plataforma                           |                              Sistema em funcionamento                              |
 
 </div>
@@ -283,7 +283,7 @@ VITE_API_URL=http://localhost:8080/deepscan
   <tr>
     <td align="center">
       <a href="https://github.com/hgsouz">
-        <img src="https://github.com/hgsouz.png" width="100px" style="border-radius: 50%;" alt="Hugo Souza"/><br/>
+        <img src="src/assets/FotoHugo.png" width="100px" style="border-radius: 50%;" alt="Hugo Souza"/><br/>
         <b>Hugo Souza</b>
       </a><br/>
       <sub>Desenvolvedor Frontend</sub><br/>
@@ -297,7 +297,7 @@ VITE_API_URL=http://localhost:8080/deepscan
     </td>
     <td align="center">
       <a href="https://github.com/PompeuDev">
-        <img src="https://github.com/PompeuDev.png" width="100px" style="border-radius: 50%;" alt="Lucas Pompeu"/><br/>
+        <img src="src/assets/FotoLucasPompeu.png" width="100px" style="border-radius: 50%;" alt="Lucas Pompeu"/><br/>
         <b>Lucas Pompeu</b>
       </a><br/>
       <sub>Desenvolvedor Java</sub><br/>
@@ -311,7 +311,7 @@ VITE_API_URL=http://localhost:8080/deepscan
     </td>
     <td align="center">
       <a href="https://github.com/Labs-LCS">
-        <img src="https://github.com/Labs-LCS.png" width="100px" style="border-radius: 50%;" alt="Lucas Campanhã"/><br/>
+        <img src="src/assets/FotoLucasCampanha.png" width="100px" style="border-radius: 50%;" alt="Lucas Campanhã"/><br/>
         <b>Lucas Campanhã</b>
       </a><br/>
       <sub>Desenvolvedor Python</sub><br/>
@@ -327,7 +327,7 @@ VITE_API_URL=http://localhost:8080/deepscan
   <tr>
     <td align="center">
       <a href="https://github.com/GustavoSouNascimento">
-        <img src="https://github.com/GustavoSouNascimento.png" width="100px" style="border-radius: 50%;" alt="Gustavo Souza"/><br/>
+        <img src="src/assets/FotoGustavo.jpeg" width="100px" style="border-radius: 50%;" alt="Gustavo Souza"/><br/>
         <b>Gustavo Souza</b>
       </a><br/>
       <sub>Especialista em Banco de Dados</sub><br/>
@@ -341,7 +341,7 @@ VITE_API_URL=http://localhost:8080/deepscan
     </td>
     <td align="center">
       <a href="https://github.com/EnzoYukio">
-        <img src="https://github.com/EnzoYukio.png" width="100px" style="border-radius: 50%;" alt="Enzo Yukio"/><br/>
+        <img src="src/assets/FotoEnzo.png" width="100px" style="border-radius: 50%;" alt="Enzo Yukio"/><br/>
         <b>Enzo Yukio</b>
       </a><br/>
       <sub>Especialista em IA</sub><br/>
