@@ -113,8 +113,8 @@ Desastres naturais oceânicos como tsunamis, furacões e anomalias de temperatur
 └───────────────────────┬─────────────────────────────┘
                         │
 ┌───────────────────────▼─────────────────────────────┐
-│             FRONTEND — React + TypeScript           │
-│           Vercel · https://deepscanfiap.vercel.app  │
+│        FRONTEND — React + TypeScript                │
+│      Vercel · https://deepscanfiap.vercel.app       │
 └──────┬────────────────────────────────────┬─────────┘
        │                                    │
 ┌──────▼──────────┐              ┌──────────▼──────────┐
@@ -152,7 +152,7 @@ DeepScan-FrontEnd/
 │   ├── assets/                 # Imagens e recursos estáticos
 │   │   ├── logo.png            # Logotipo DeepScan
 │   │   ├── whale.png           # Baleia (elemento visual principal)
-│   │   ├── monitoramento.png   # Imagem da aba de monitoramento 
+│   │   ├── monitoramento.png   # Imagem da aba de monitoramento
 │   │   ├── paginaInicial.png   # Página inicial da aplicação
 │   │   └── foto*.png/jpeg      # Fotos da equipe
 │   │
@@ -177,7 +177,6 @@ DeepScan-FrontEnd/
 │   │   ├── Sobre.tsx           # Sobre o projeto
 │   │   ├── FAQ.tsx             # Perguntas frequentes
 │   │   ├── Integrantes.tsx     # Equipe
-│   │   ├── Login.tsx           # Acesso à plataforma
 │   │   └── NotFound.tsx        # Página 404
 │   │
 │   ├── styles/

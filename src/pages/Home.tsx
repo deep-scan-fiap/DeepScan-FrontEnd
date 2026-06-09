@@ -1,4 +1,4 @@
-import { ArrowRight, Waves, AlertTriangle, Database } from "lucide-react";
+import { Waves, AlertTriangle, Database } from "lucide-react";
 import { Link } from "react-router";
 import whaleImage from "@/assets/whale.png";
 
@@ -45,13 +45,6 @@ export function Home() {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up animate-delay-400">
-                <Link
-                  to="/login"
-                  className="inline-flex items-center justify-center gap-2 bg-white text-[#064273] px-8 py-4 rounded-lg font-semibold hover:bg-[#def3f6] transition-all duration-300 hover:scale-105 hover:shadow-lg animate-pulse-glow"
-                >
-                  Começar Agora
-                  <ArrowRight size={20} />
-                </Link>
                 <Link
                   to="/sobre"
                   className="inline-flex items-center justify-center gap-2 bg-white/10 backdrop-blur-sm border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white/20 transition-all duration-300 hover:scale-105"
@@ -196,17 +189,10 @@ export function Home() {
           <h2 className="text-3xl lg:text-4xl font-bold text-[#064273] mb-6 animate-fade-in-up">
             Pronto para prevenir desastres e proteger os oceanos?
           </h2>
-          <p className="text-lg text-[#76b6c4] mb-8 max-w-2xl mx-auto animate-fade-in-up animate-delay-100">
+          <p className="text-lg text-[#76b6c4] max-w-2xl mx-auto animate-fade-in-up animate-delay-100">
             Junte-se a centros de pesquisa e organizações que confiam no Deep
             Scan para salvar vidas
           </p>
-          <Link
-            to="/login"
-            className="inline-flex items-center gap-2 bg-[#1da2d8] text-white px-8 py-4 rounded-lg font-semibold hover:bg-[#064273] transition-all duration-300 hover:scale-105 hover:shadow-xl animate-fade-in-up animate-delay-200"
-          >
-            Acessar Plataforma
-            <ArrowRight size={20} />
-          </Link>
         </div>
       </section>
     </div>

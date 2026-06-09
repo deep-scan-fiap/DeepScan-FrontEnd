@@ -721,7 +721,7 @@ export function Monitoramento() {
       </div>
 
       {/* Tabs */}
-      <div className="mb-6 overflow-x-scroll gap-4">
+      <div className="mb-6 overflow-x-scroll md:overflow-x-auto gap-4">
         <div className="flex gap-1 bg-muted rounded-xl p-1 w-fit ">
           {TABS.map((t) => (
             <button
