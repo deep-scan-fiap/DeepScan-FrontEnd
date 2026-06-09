@@ -1,9 +1,15 @@
 import { Github, Linkedin, ExternalLink } from "lucide-react";
+import hugoSouza from "../assets/fotoHugo.png";
+import lucasCampanha from "../assets/FotoLucasCampanha.png";
+import lucasPompeu from "../assets/fotoLucasPompeu.png";
+import gustavoSouza from "../assets/fotoGustavo.jpeg";
+import enzoYukio from "../assets/fotoEnzo.png";
 
 export function Integrantes() {
   const team = [
     {
       name: "Hugo Souza",
+      picture: hugoSouza,
       role: "Desenvolvedor Frontend",
       bio: "Especialista em React e TypeScript, responsável pela interface da plataforma.",
       linkedin: "https://linkedin.com/in/hugo-souza-34482222a/",
@@ -12,6 +18,7 @@ export function Integrantes() {
     },
     {
       name: "Lucas Pompeu",
+      picture: lucasPompeu,
       role: "Desenvolvedor Java",
       bio: "Engenheiro de backend focado em arquitetura escalável e microserviços.",
       linkedin: "https://linkedin.com/in/lucaspompeu/",
@@ -20,6 +27,7 @@ export function Integrantes() {
     },
     {
       name: "Lucas Campanhã",
+      picture: lucasCampanha,
       role: "Desenvolvedor Python",
       bio: "Especialista em processamento de dados e integração com APIs de satélite.",
       linkedin: "https://linkedin.com/in/lucas-campanhã-342707193/",
@@ -28,6 +36,7 @@ export function Integrantes() {
     },
     {
       name: "Gustavo Souza",
+      picture: gustavoSouza,
       role: "Especialista em Banco de Dados",
       bio: "Arquiteto de dados responsável pela gestão de grandes volumes de imagens de satélite.",
       linkedin: "https://linkedin.com/in/gustavo-souza-nascimento-698a81305/",
@@ -36,6 +45,7 @@ export function Integrantes() {
     },
     {
       name: "Enzo Yukio",
+      picture: enzoYukio,
       role: "Especialista em Inteligência Artificial",
       bio: "Cientista de IA focado em modelos preditivos para desastres naturais.",
       linkedin: "https://linkedin.com/in/enzooyadomari/",
@@ -70,13 +80,12 @@ export function Integrantes() {
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 {/* Avatar */}
-                <div
-                  className={`w-24 h-24 bg-gradient-to-br ${member.color} rounded-full flex items-center justify-center text-white text-3xl font-bold mb-4 mx-auto transition-transform duration-300 group-hover:scale-110 shadow-lg`}
-                >
-                  {member.name
-                    .split(" ")
-                    .map((n) => n[0])
-                    .join("")}
+                <div>
+                  <img
+                    src={member.picture}
+                    alt=""
+                    className={`w-24 h-24 bg-gradient-to-br ${member.color} rounded-full flex items-center justify-center text-white text-3xl font-bold mb-4 mx-auto transition-transform duration-300 group-hover:scale-110 shadow-lg`}
+                  />
                 </div>
 
                 {/* Info */}
