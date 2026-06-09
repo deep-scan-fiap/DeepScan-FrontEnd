@@ -285,7 +285,7 @@ VITE_API_URL=http://localhost:8080/deepscan
   <tr>
     <td align="center">
       <a href="https://github.com/hgsouz">
-        <img src="src/assets/FotoHugo.png" width="100px" style="border-radius: 50%;" alt="Hugo Souza"/><br/>
+        <img src="https://github.com/deep-scan-fiap/DeepScan-FrontEnd/blob/7a507b1239799f1446270843ca462c41264322ae/src/assets/fotoHugo.png" width="100px" style="border-radius: 50%;" alt="Hugo Souza"/><br/>
         <b>Hugo Souza</b>
       </a><br/>
       <sub>Desenvolvedor Frontend</sub><br/>
@@ -299,7 +299,7 @@ VITE_API_URL=http://localhost:8080/deepscan
     </td>
     <td align="center">
       <a href="https://github.com/PompeuDev">
-        <img src="src/assets/FotoLucasPompeu.png" width="100px" style="border-radius: 50%;" alt="Lucas Pompeu"/><br/>
+        <img src="https://github.com/deep-scan-fiap/DeepScan-FrontEnd/blob/7a507b1239799f1446270843ca462c41264322ae/src/assets/fotoLucasPompeu.png" width="100px" style="border-radius: 50%;" alt="Lucas Pompeu"/><br/>
         <b>Lucas Pompeu</b>
       </a><br/>
       <sub>Desenvolvedor Java</sub><br/>
@@ -313,7 +313,7 @@ VITE_API_URL=http://localhost:8080/deepscan
     </td>
     <td align="center">
       <a href="https://github.com/Labs-LCS">
-        <img src="src/assets/FotoLucasCampanha.png" width="100px" style="border-radius: 50%;" alt="Lucas Campanhã"/><br/>
+        <img src="https://github.com/deep-scan-fiap/DeepScan-FrontEnd/blob/7a507b1239799f1446270843ca462c41264322ae/src/assets/FotoLucasCampanha.png" width="100px" style="border-radius: 50%;" alt="Lucas Campanhã"/><br/>
         <b>Lucas Campanhã</b>
       </a><br/>
       <sub>Desenvolvedor Python</sub><br/>
@@ -329,7 +329,7 @@ VITE_API_URL=http://localhost:8080/deepscan
   <tr>
     <td align="center">
       <a href="https://github.com/GustavoSouNascimento">
-        <img src="src/assets/FotoGustavo.jpeg" width="100px" style="border-radius: 50%;" alt="Gustavo Souza"/><br/>
+        <img src="https://github.com/deep-scan-fiap/DeepScan-FrontEnd/blob/7a507b1239799f1446270843ca462c41264322ae/src/assets/fotoGustavo.jpeg" width="100px" style="border-radius: 50%;" alt="Gustavo Souza"/><br/>
         <b>Gustavo Souza</b>
       </a><br/>
       <sub>Especialista em Banco de Dados</sub><br/>
@@ -343,7 +343,7 @@ VITE_API_URL=http://localhost:8080/deepscan
     </td>
     <td align="center">
       <a href="https://github.com/EnzoYukio">
-        <img src="src/assets/FotoEnzo.png" width="100px" style="border-radius: 50%;" alt="Enzo Yukio"/><br/>
+        <img src="https://github.com/deep-scan-fiap/DeepScan-FrontEnd/blob/7a507b1239799f1446270843ca462c41264322ae/src/assets/fotoEnzo.png" width="100px" style="border-radius: 50%;" alt="Enzo Yukio"/><br/>
         <b>Enzo Yukio</b>
       </a><br/>
       <sub>Especialista em IA</sub><br/>
