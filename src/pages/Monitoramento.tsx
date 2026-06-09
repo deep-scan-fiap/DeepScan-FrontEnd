@@ -25,8 +25,6 @@ const TH =
   "bg-muted text-foreground font-bold text-[11px] uppercase tracking-wide py-2.5 px-3.5 text-left border-b-2 border-foreground/10 whitespace-nowrap";
 const TD = "py-2.5 px-3.5 border-b border-foreground/10";
 const TR = "hover:bg-muted/50";
-const MOCK =
-  "bg-gradient-to-br from-foreground/[4%] to-primary/[6%] border border-dashed border-secondary rounded-xl p-6";
 
 function riscoBadge(r: string) {
   const cls =
