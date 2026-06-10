@@ -12,7 +12,7 @@
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind-4.1.12-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
 [![Vercel](https://img.shields.io/badge/Deploy-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://deepscanfiap.vercel.app)
 
-[🌐 Link da aplicação](https://deepscanfiap.vercel.app) · [📁 Repositório](https://github.com/deep-scan-fiap) · [📧 Contato](mailto:deepscan.fiap@gmail.com)
+[🌐 Link da aplicação](https://deepscanfiap.vercel.app) · [📁 Repositório](https://github.com/deep-scan-fiap/DeepScan-FrontEnd) · [📧 Contato](mailto:deepscan.fiap@gmail.com)
 
 </div>
 
@@ -215,6 +215,16 @@ DeepScan-FrontEnd/
 
 ## 🚀 Como Usar
 
+### Deploy na Vercel
+Foi feito o deploy de todo o projeto na Vercel, e pode ser acessado através do link abaixo:
+
+[DeepScan](https://deepscanfiap.vercel.app)
+
+Lembrando que o projeto foi todo vercionado utilizando o GitHub, o acesso ao repositório pode feito em:
+
+[DeepScan GitHub](https://github.com/deep-scan-fiap/DeepScan-FrontEnd)
+
+##  Uso local
 ### Pré-requisitos
 
 - [Node.js](https://nodejs.org) 18+ instalado
@@ -360,12 +370,12 @@ VITE_API_URL=http://localhost:8080/deepscan
 
 ## 🔗 Links Importantes
 
-| Recurso                   | Link                                                                   |
-| ------------------------- | ---------------------------------------------------------------------- |
-| 🌐 Plataforma em produção | [https://deepscanfiap.vercel.app](https://deepscanfiap.vercel.app)     |
-| 📁 Organização no GitHub  | [https://github.com/deep-scan-fiap](https://github.com/deep-scan-fiap) |
-| 📺 Vídeo no YouTube       | [https://youtu.be/zb1og_9PUhc](https://youtu.be/zb1og_9PUhc)           |
-| 📧 E-mail de contato      | [deepscan.fiap@gmail.com](mailto:deepscan.fiap@gmail.com)              |
+| Recurso                   | Link                                                                                     |
+| ------------------------- | ---------------------------------------------------------------------------------- ----- |
+| 🌐 Plataforma em produção | [https://deepscanfiap.vercel.app](https://deepscanfiap.vercel.app)                       |
+| 📁 Organização no GitHub  | [https://github.com/deep-scan-fiap](https://github.com/deep-scan-fiap/DeepScan-FrontEnd) |
+| 📺 Vídeo no YouTube       | [https://youtu.be/zb1og_9PUhc](https://youtu.be/zb1og_9PUhc)                             |
+| 📧 E-mail de contato      | [deepscan.fiap@gmail.com](mailto:deepscan.fiap@gmail.com)                                |
 
 ---
 
