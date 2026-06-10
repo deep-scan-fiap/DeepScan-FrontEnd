@@ -370,12 +370,12 @@ VITE_API_URL=http://localhost:8080/deepscan
 
 ## 🔗 Links Importantes
 
-| Recurso                   | Link                                                                                     |
-| ------------------------- | ---------------------------------------------------------------------------------- ----- |
-| 🌐 Plataforma em produção | [https://deepscanfiap.vercel.app](https://deepscanfiap.vercel.app)                       |
-| 📁 Organização no GitHub  | [https://github.com/deep-scan-fiap](https://github.com/deep-scan-fiap/DeepScan-FrontEnd) |
-| 📺 Vídeo no YouTube       | [https://youtu.be/zb1og_9PUhc](https://youtu.be/zb1og_9PUhc)                             |
-| 📧 E-mail de contato      | [deepscan.fiap@gmail.com](mailto:deepscan.fiap@gmail.com)                                |
+| Recurso                   | Link                                                                  |
+| ------------------------- | --------------------------------------------------------------------- |
+| 🌐 Plataforma em produção | [https://deepscanfiap.vercel.app](https://deepscanfiap.vercel.app)    |
+| 📁 Organização no GitHub  | [https://github.com/deep-scan-fiap](https://github.com/deep-scan-fiap/DeepScan-FrontEnd)|
+| 📺 Vídeo no YouTube       | [https://youtu.be/zb1og_9PUhc](https://youtu.be/zb1og_9PUhc)          |
+| 📧 E-mail de contato      | [deepscan.fiap@gmail.com](mailto:deepscan.fiap@gmail.com)             |
 
 ---
 
