@@ -64,9 +64,7 @@ Desastres naturais oceânicos como tsunamis, furacões e anomalias de temperatur
 
 ### 📺 Vídeo de Apresentação
 
-<!-- ▶ Adicionar link do YouTube aqui -->
-
-> 🔗 **[Assista no YouTube uma demonstração do projeto]**
+> 🔗 **[Vídeo de apresentação](https://youtu.be/zb1og_9PUhc)**
 
 </div>
 
@@ -366,7 +364,7 @@ VITE_API_URL=http://localhost:8080/deepscan
 | ------------------------- | ---------------------------------------------------------------------- |
 | 🌐 Plataforma em produção | [https://deepscanfiap.vercel.app](https://deepscanfiap.vercel.app)     |
 | 📁 Organização no GitHub  | [https://github.com/deep-scan-fiap](https://github.com/deep-scan-fiap) |
-| 📺 Vídeo no YouTube       | _(adicionar link)_                                                     |
+| 📺 Vídeo no YouTube       | [https://youtu.be/zb1og_9PUhc](https://youtu.be/zb1og_9PUhc)           |
 | 📧 E-mail de contato      | [deepscan.fiap@gmail.com](mailto:deepscan.fiap@gmail.com)              |
 
 ---
